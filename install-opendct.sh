@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-VERSION=${VERSION:-latest}
+#VERSION=${VERSION:-latest}
+VERSION=${VERSION:0.5.28}
 
 # OpenDCT Version
 OPENDCT_VERSION=""
