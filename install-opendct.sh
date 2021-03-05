@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-#VERSION=${VERSION:-latest}
-VERSION=${VERSION:0.5.28}
+VERSION=${VERSION:-0.5.29}
 
 # OpenDCT Version
 OPENDCT_VERSION=""
@@ -15,7 +14,7 @@ elif [ "${VERSION}" = "beta" ] ; then
     OPENDCT_DEB=opendct_${OPENDCT_VERSION}-1_amd64.deb
 else
     OPENDCT_VERSION=${VERSION}
-    OPENDCT_URL=https://dl.bintray.com/opendct/Beta/releases/${OPENDCT_VERSION}/opendct_${OPENDCT_VERSION}-1_amd64.deb
+    OPENDCT_URL=https://bintray.com/opendct/Releases/download_file?file_path=releases%2F${OPENDCT_VERSION}%2Fopendct_${OPENDCT_VERSION}-1_amd64.deb
     OPENDCT_DEB=opendct_${OPENDCT_VERSION}-1_amd64.deb
 fi
 
